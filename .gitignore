@@ -1,0 +1,23 @@
+# 上游克隆项目（精选=私有，不入库）
+microservices/youlai-cloud/
+microservices/netty/
+data-middleware/redisson/
+data-middleware/xxl-job/
+enterprise-admin/Sa-Token/
+integration-etl/spring-batch/
+java-tooling/easyexcel/
+java-tooling/hutool/
+java-tooling/java-design-patterns/
+java-tooling/picocli/
+
+# 构建产物
+target/
+build/
+*.jar
+node_modules/
+dist/
+
+# 运行时
+_logs/
+*.pid
+*.log

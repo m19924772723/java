@@ -1,0 +1,74 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< cn.dev33:sa-token-demo-sso3-client >-----------------
+[INFO] Building sa-token-demo-sso3-client 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:2.5.14:run (default-cli) > test-compile @ sa-token-demo-sso3-client >>>
+[INFO] 
+[INFO] --- resources:3.2.0:resources (default-resources) @ sa-token-demo-sso3-client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 1 resource
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ sa-token-demo-sso3-client ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.2.0:testResources (default-testResources) @ sa-token-demo-sso3-client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory D:\code\workbuddy\workbuddy-project\java\enterprise-admin\Sa-Token\sa-token-demo\sa-token-demo-sso\sa-token-demo-sso3-client\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ sa-token-demo-sso3-client ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< spring-boot:2.5.14:run (default-cli) < test-compile @ sa-token-demo-sso3-client <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:2.5.14:run (default-cli) @ sa-token-demo-sso3-client ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v2.5.14)
+
+2026-10-23 12:01:00.462  INFO 1636 --- [           main] com.pj.SaSso3ClientApplication           : Starting SaSso3ClientApplication using Java 17.0.20.1 on DESKTOP-NTDA0QK with PID 1636 (D:\code\workbuddy\workbuddy-project\java\enterprise-admin\Sa-Token\sa-token-demo\sa-token-demo-sso\sa-token-demo-sso3-client\target\classes started by 1 in D:\code\workbuddy\workbuddy-project\java\enterprise-admin\Sa-Token\sa-token-demo\sa-token-demo-sso\sa-token-demo-sso3-client)
+2026-10-23 12:01:00.466  INFO 1636 --- [           main] com.pj.SaSso3ClientApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-10-23 12:01:01.436  INFO 1636 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2026-10-23 12:01:01.438  INFO 1636 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-10-23 12:01:01.467  INFO 1636 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2026-10-23 12:01:02.146  INFO 1636 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9003 (http)
+2026-10-23 12:01:02.161  INFO 1636 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-23 12:01:02.162  INFO 1636 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2026-10-23 12:01:02.321  INFO 1636 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-10-23 12:01:02.321  INFO 1636 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1777 ms
+____ ____    ___ ____ _  _ ____ _  _ 
+[__  |__| __  |  |  | |_/  |___ |\ | 
+___] |  |     |  |__| | \_ |___ | \| 
+https://sa-token.com (v1.46.0)
+SA [INFO] -->: 全局配置 SaTokenConfig [tokenName=satoken, timeout=2592000, activeTimeout=-1, dynamicActiveTimeout=false, isConcurrent=true, isShare=false, replacedRange=CURR_DEVICE_TYPE, replacedLoginExitMode=OLD_DEVICE, maxLoginCount=12, overflowLogoutMode=LOGOUT, maxTryTimes=12, isReadBody=true, isReadHeader=true, isReadCookie=true, isLastingCookie=true, isWriteHeader=false, logoutRange=TOKEN, isLogoutKeepFreezeOps=false, isLogoutKeepTokenSession=false, rightNowCreateTokenSession=false, allowLoginIdColon=false, tokenStyle=uuid, dataRefreshPeriod=30, tokenSessionCheckLogin=true, autoRenew=true, tokenPrefix=null, cookieAutoFillPrefix=false, isPrint=true, isLog=true, logLevel=trace, logLevelInt=1, isColorLog=false, jwtSecretKey=null, httpBasic=, httpDigest=, currDomain=null, sameTokenTimeout=86400, checkSameToken=false, cookie=SaCookieConfig [domain=null, path=null, secure=false, httpOnly=false, sameSite=null, extraAttrs={}]] 
+SA [INFO] -->: SPI plugin loading start ...
+SA [INFO] -->: 全局组件 SaJsonTemplate 载入成功: cn.dev33.satoken.json.SaJsonTemplateForJackson
+SA [INFO] -->: 注解扩展 @SaCheckSign (处理器: cn.dev33.satoken.sign.annotation.handle.SaCheckSignHandler)
+SA [INFO] -->: 全局组件 SaHttpTemplate 载入成功: cn.dev33.satoken.http.SaHttpTemplateForForest
+SA [INFO] -->: SPI plugin loading end ...
+SA [INFO] -->: 全局组件 SaTokenDao 载入成功: cn.dev33.satoken.dao.SaTokenDaoForRedisTemplate
+2026-10-23 12:01:03.494  INFO 1636 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9003 (http) with context path ''
+2026-10-23 12:01:03.504  INFO 1636 --- [           main] com.pj.SaSso3ClientApplication           : Started SaSso3ClientApplication in 3.787 seconds (JVM running for 4.424)
+
+---------------------- Sa-Token SSO 模式三 Client 端启动成功 ----------------------
+配置信息：SaSsoClientConfig [mode=, client=sso-client3, serverUrl=http://sa-sso-server.com:9000, authUrl=/sso/auth, signoutUrl=/sso/signout, pushUrl=/sso/pushS, getDataUrl=/sso/getData, currSsoLogin=null, currSsoLogoutCall=null, isHttp=true, isSlo=true, regLogoutCall=false, secretKey=SSO-C3-kQwIOrYvnXmSDkwEiFngrKidMcdrgKor, isCheckSign=true]
+测试访问应用端一: http://sa-sso-client1.com:9003
+测试访问应用端二: http://sa-sso-client2.com:9003
+测试访问应用端三: http://sa-sso-client3.com:9003
+测试前需要根据官网文档修改 hosts 文件，测试账号密码：sa / 123456
+
+2026-10-23 12:01:47.131  INFO 1636 --- [nio-9003-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-23 12:01:47.131  INFO 1636 --- [nio-9003-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-10-23 12:01:47.133  INFO 1636 --- [nio-9003-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms

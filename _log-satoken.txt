@@ -1,0 +1,63 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< cn.dev33:sa-token-demo-springboot >------------------
+[INFO] Building sa-token-demo-springboot 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:2.5.14:run (default-cli) > test-compile @ sa-token-demo-springboot >>>
+[INFO] 
+[INFO] --- resources:3.2.0:resources (default-resources) @ sa-token-demo-springboot ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 1 resource
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ sa-token-demo-springboot ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.2.0:testResources (default-testResources) @ sa-token-demo-springboot ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory D:\code\workbuddy\workbuddy-project\java\enterprise-admin\Sa-Token\sa-token-demo\sa-token-demo-springboot\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ sa-token-demo-springboot ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< spring-boot:2.5.14:run (default-cli) < test-compile @ sa-token-demo-springboot <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:2.5.14:run (default-cli) @ sa-token-demo-springboot ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v2.5.14)
+
+2026-10-23 12:00:22.370  INFO 9364 --- [           main] com.pj.SaTokenDemoApplication            : Starting SaTokenDemoApplication using Java 17.0.20.1 on DESKTOP-NTDA0QK with PID 9364 (D:\code\workbuddy\workbuddy-project\java\enterprise-admin\Sa-Token\sa-token-demo\sa-token-demo-springboot\target\classes started by 1 in D:\code\workbuddy\workbuddy-project\java\enterprise-admin\Sa-Token\sa-token-demo\sa-token-demo-springboot)
+2026-10-23 12:00:22.374  INFO 9364 --- [           main] com.pj.SaTokenDemoApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-10-23 12:00:23.971  INFO 9364 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2026-10-23 12:00:23.990  INFO 9364 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-23 12:00:23.991  INFO 9364 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2026-10-23 12:00:24.223  INFO 9364 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-10-23 12:00:24.223  INFO 9364 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1763 ms
+____ ____    ___ ____ _  _ ____ _  _ 
+[__  |__| __  |  |  | |_/  |___ |\ | 
+___] |  |     |  |__| | \_ |___ | \| 
+https://sa-token.com (v1.46.0)
+SA [INFO] -->: 全局配置 SaTokenConfig [tokenName=satoken, timeout=2592000, activeTimeout=-1, dynamicActiveTimeout=false, isConcurrent=true, isShare=false, replacedRange=CURR_DEVICE_TYPE, replacedLoginExitMode=OLD_DEVICE, maxLoginCount=12, overflowLogoutMode=LOGOUT, maxTryTimes=12, isReadBody=true, isReadHeader=true, isReadCookie=true, isLastingCookie=true, isWriteHeader=false, logoutRange=TOKEN, isLogoutKeepFreezeOps=false, isLogoutKeepTokenSession=false, rightNowCreateTokenSession=false, allowLoginIdColon=false, tokenStyle=uuid, dataRefreshPeriod=30, tokenSessionCheckLogin=true, autoRenew=true, tokenPrefix=null, cookieAutoFillPrefix=false, isPrint=true, isLog=true, logLevel=trace, logLevelInt=1, isColorLog=false, jwtSecretKey=null, httpBasic=, httpDigest=, currDomain=null, sameTokenTimeout=86400, checkSameToken=false, cookie=SaCookieConfig [domain=null, path=null, secure=false, httpOnly=false, sameSite=null, extraAttrs={}]] 
+SA [INFO] -->: SPI plugin loading start ...
+SA [INFO] -->: 全局组件 SaJsonTemplate 载入成功: cn.dev33.satoken.json.SaJsonTemplateForJackson
+SA [INFO] -->: SPI plugin loading end ...
+SA [INFO] -->: 全局组件 StpInterface 载入成功: com.pj.satoken.StpInterfaceImpl
+2026-10-23 12:00:25.152  INFO 9364 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2026-10-23 12:00:25.164  INFO 9364 --- [           main] com.pj.SaTokenDemoApplication            : Started SaTokenDemoApplication in 3.761 seconds (JVM running for 4.374)
+
+启动成功：Sa-Token配置如下：SaTokenConfig [tokenName=satoken, timeout=2592000, activeTimeout=-1, dynamicActiveTimeout=false, isConcurrent=true, isShare=false, replacedRange=CURR_DEVICE_TYPE, replacedLoginExitMode=OLD_DEVICE, maxLoginCount=12, overflowLogoutMode=LOGOUT, maxTryTimes=12, isReadBody=true, isReadHeader=true, isReadCookie=true, isLastingCookie=true, isWriteHeader=false, logoutRange=TOKEN, isLogoutKeepFreezeOps=false, isLogoutKeepTokenSession=false, rightNowCreateTokenSession=false, allowLoginIdColon=false, tokenStyle=uuid, dataRefreshPeriod=30, tokenSessionCheckLogin=true, autoRenew=true, tokenPrefix=null, cookieAutoFillPrefix=false, isPrint=true, isLog=true, logLevel=trace, logLevelInt=1, isColorLog=false, jwtSecretKey=null, httpBasic=, httpDigest=, currDomain=null, sameTokenTimeout=86400, checkSameToken=false, cookie=SaCookieConfig [domain=null, path=null, secure=false, httpOnly=false, sameSite=null, extraAttrs={}]]
+2026-10-23 12:00:27.776  INFO 9364 --- [nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-23 12:00:27.777  INFO 9364 --- [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-10-23 12:00:27.778  INFO 9364 --- [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms

@@ -1,0 +1,91 @@
+12:05:56,351 |-INFO in ch.qos.logback.classic.LoggerContext[logback] - Found logback-core version 1.5.38
+12:05:56,383 |-INFO in ch.qos.logback.classic.util.ContextInitializer@73e22a3d - Here is a list of configurators discovered as a service, by rank: 
+12:05:56,385 |-INFO in ch.qos.logback.classic.util.ContextInitializer@73e22a3d -   org.springframework.boot.logging.logback.RootLogLevelConfigurator
+12:05:56,385 |-INFO in ch.qos.logback.classic.util.ContextInitializer@73e22a3d - They will be invoked in order until ExecutionStatus.DO_NOT_INVOKE_NEXT_IF_ANY is returned.
+12:05:56,385 |-INFO in ch.qos.logback.classic.util.ContextInitializer@73e22a3d - Constructed configurator of type class org.springframework.boot.logging.logback.RootLogLevelConfigurator
+12:05:56,419 |-INFO in ch.qos.logback.classic.util.ContextInitializer@73e22a3d - org.springframework.boot.logging.logback.RootLogLevelConfigurator.configure() call lasted 0 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+12:05:56,419 |-INFO in ch.qos.logback.classic.util.ContextInitializer@73e22a3d - Trying to configure with ch.qos.logback.classic.util.DefaultJoranConfigurator
+12:05:56,419 |-INFO in ch.qos.logback.classic.util.ContextInitializer@73e22a3d - Constructed configurator of type class ch.qos.logback.classic.util.DefaultJoranConfigurator
+12:05:56,419 |-INFO in ch.qos.logback.classic.LoggerContext[logback] - Could NOT find resource [logback-test.xml]
+12:05:56,434 |-INFO in ch.qos.logback.classic.LoggerContext[logback] - Found resource [logback.xml] at [jar:nested:/D:/code/workbuddy/workbuddy-project/java/data-middleware/xxl-job/xxl-job-admin/target/xxl-job-admin-3.5.1-SNAPSHOT.jar/!BOOT-INF/classes/!/logback.xml]
+12:05:56,843 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Scan attribute set to true. Will scan for configuration file changes.
+12:05:56,845 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@47faa49c - URL [jar:nested:/D:/code/workbuddy/workbuddy-project/java/data-middleware/xxl-job/xxl-job-admin/target/xxl-job-admin-3.5.1-SNAPSHOT.jar/!BOOT-INF/classes/!/logback.xml] is not of type file
+12:05:56,846 |-INFO in ch.qos.logback.classic.model.processor.ContextNameModelHandler - Setting logger context name as [logback]
+12:05:56,849 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@28f2a10f - value "/data/applogs/xxl-job/xxl-job-admin.log" substituted for "${LOG_HOME:-/data/applogs}/xxl-job/xxl-job-admin.log"
+12:05:56,849 |-WARN in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Missing watchable .xml or .properties files.
+12:05:56,849 |-WARN in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Watching .xml files requires that the main configuration file is reachable as a URL
+12:05:56,849 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Main configuration file URL: jar:nested:/D:/code/workbuddy/workbuddy-project/java/data-middleware/xxl-job/xxl-job-admin/target/xxl-job-admin-3.5.1-SNAPSHOT.jar/!BOOT-INF/classes/!/logback.xml
+12:05:56,849 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - FileWatchList= {}
+12:05:56,849 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - URLWatchList= {}
+12:05:56,862 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@28f2a10f - value "/data/applogs/xxl-job/xxl-job-admin.log" substituted for "${log.path}"
+12:05:56,863 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@28f2a10f - value "/data/applogs/xxl-job/xxl-job-admin.log.%d{yyyy-MM-dd}.log" substituted for "${log.path}.%d{yyyy-MM-dd}.log"
+12:05:56,865 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [console]
+12:05:56,866 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+12:05:56,883 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+12:05:56,986 |-INFO in ch.qos.logback.core.ConsoleAppender[console] - NOTE: Writing to the console can be slow. Try to avoid logging to the 
+12:05:56,986 |-INFO in ch.qos.logback.core.ConsoleAppender[console] - console in production environments, especially in high volume systems.
+12:05:56,986 |-INFO in ch.qos.logback.core.ConsoleAppender[console] - See also https://logback.qos.ch/codes.html#slowConsole
+12:05:57,000 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [file]
+12:05:57,000 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+12:05:57,010 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@28f2a10f - value "/data/applogs/xxl-job/xxl-job-admin.log" substituted for "${log.path}"
+12:05:57,016 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@28f2a10f - value "/data/applogs/xxl-job/xxl-job-admin.log.%d{yyyy-MM-dd}.log" substituted for "${log.path}.%d{yyyy-MM-dd}.log"
+12:05:57,024 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@259219561 - No compression will be used
+12:05:57,033 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@259219561 - Will use the pattern /data/applogs/xxl-job/xxl-job-admin.log.%d{yyyy-MM-dd}.log for the active file
+12:05:57,116 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern '/data/applogs/xxl-job/xxl-job-admin.log.%d{yyyy-MM-dd}.log'.
+12:05:57,116 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+12:05:57,116 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to 2026-10-23T04:05:57.116Z
+12:05:57,125 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+12:05:57,133 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file] - Active log file name: /data/applogs/xxl-job/xxl-job-admin.log
+12:05:57,133 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file] - File property is set to [/data/applogs/xxl-job/xxl-job-admin.log]
+12:05:57,148 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to INFO
+12:05:57,151 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [console] to Logger[ROOT]
+12:05:57,151 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [file] to Logger[ROOT]
+12:05:57,151 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@6da21078 - End of configuration.
+12:05:57,151 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@7fee8714 - Registering current configuration as safe fallback point
+12:05:57,151 |-INFO in ch.qos.logback.classic.util.ContextInitializer@73e22a3d - ch.qos.logback.classic.util.DefaultJoranConfigurator.configure() call lasted 732 milliseconds. ExecutionStatus=DO_NOT_INVOKE_NEXT_IF_ANY
+
+12:05:58,077 |-WARN in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Missing watchable .xml or .properties files.
+12:05:58,077 |-WARN in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Watching .xml files requires that the main configuration file is reachable as a URL
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.1)
+
+2026-10-23 12:05:58.395 [main] INFO  c.x.job.admin.XxlJobAdminApplication - Starting XxlJobAdminApplication using Java 21.0.12.1 with PID 13428 (D:\code\workbuddy\workbuddy-project\java\data-middleware\xxl-job\xxl-job-admin\target\xxl-job-admin-3.5.1-SNAPSHOT.jar started by 1 in D:\code\workbuddy\workbuddy-project\java)
+2026-10-23 12:05:58.404 [main] INFO  c.x.job.admin.XxlJobAdminApplication - No active profile set, falling back to 1 default profile: "default"
+2026-10-23 12:06:03.146 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-10-23 12:06:03.180 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-10-23 12:06:03.192 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-23 12:06:03.192 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-10-23 12:06:03.264 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 4063 ms
+2026-10-23 12:06:05.025 [JobRegistryHelper#registryMonitorThread] INFO  c.xxl.tool.concurrent.CyclicThread - >>>>>>>>>>> CyclicThread[name = JobRegistryHelper#registryMonitorThread] start.
+2026-10-23 12:06:05.027 [JobFailAlarmMonitorHelper#monitorThread] INFO  c.xxl.tool.concurrent.CyclicThread - >>>>>>>>>>> CyclicThread[name = JobFailAlarmMonitorHelper#monitorThread] start.
+2026-10-23 12:06:05.029 [JobCompleteHelper#jobMonitorThread] INFO  c.xxl.tool.concurrent.CyclicThread - >>>>>>>>>>> CyclicThread[name = JobCompleteHelper#jobMonitorThread] start.
+2026-10-23 12:06:05.032 [main] INFO  c.x.j.a.b.s.c.XxlJobAdminBootstrap - >>>>>>>>> xxl-job admin start success.
+2026-10-23 12:06:05.038 [JobLogReportHelper#logReportThread] INFO  c.xxl.tool.concurrent.CyclicThread - >>>>>>>>>>> CyclicThread[name = JobLogReportHelper#logReportThread] start.
+2026-10-23 12:06:05.118 [JobCompleteHelper#jobMonitorThread] INFO  com.zaxxer.hikari.HikariDataSource - HikariCP - Starting...
+2026-10-23 12:06:05.476 [main] INFO  c.x.s.core.bootstrap.XxlSsoBootstrap - >>>>>>>>>>> xxl-sso XxlSsoBootstrap started.
+2026-10-23 12:06:05.606 [main] INFO  c.x.s.c.a.i.XxlSsoWebInterceptor - XxlSsoWebInterceptor init.
+2026-10-23 12:06:06.841 [JobCompleteHelper#jobMonitorThread] INFO  com.zaxxer.hikari.pool.HikariPool - HikariCP - Added connection com.mysql.cj.jdbc.ConnectionImpl@2eba75f9
+2026-10-23 12:06:06.848 [JobCompleteHelper#jobMonitorThread] INFO  com.zaxxer.hikari.HikariDataSource - HikariCP - Start completed.
+2026-10-23 12:06:07.289 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-10-23 12:06:07.458 [JobRegistryHelper#registryMonitorThread] INFO  c.x.j.a.b.s.thread.JobRegistryHelper - >>>>>>>>>>> xxl-job, JobRegistryHelper, detect changes and refresh JobGroupCache success, appname2GroupCache:{xxl-job-executor-sample-ai=XxlJobGroup{id=2, appname='xxl-job-executor-sample-ai', name='AI执行器Sample', addressType=0, addressList='null', accessToken='default_token', updateTime=null}, xxl-job-executor-sample=XxlJobGroup{id=1, appname='xxl-job-executor-sample', name='通用执行器Sample', addressType=0, addressList='null', accessToken='default_token', updateTime=null}}, id2GroupCache:{1=XxlJobGroup{id=1, appname='xxl-job-executor-sample', name='通用执行器Sample', addressType=0, addressList='null', accessToken='default_token', updateTime=null}, 2=XxlJobGroup{id=2, appname='xxl-job-executor-sample-ai', name='AI执行器Sample', addressType=0, addressList='null', accessToken='default_token', updateTime=null}}
+2026-10-23 12:06:07.544 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-10-23 12:06:07.604 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-23 12:06:07.604 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-10-23 12:06:07.608 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2026-10-23 12:06:07.611 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-10-23 12:06:07.628 [main] INFO  c.x.job.admin.XxlJobAdminApplication - Started XxlJobAdminApplication in 10.214 seconds (process running for 12.531)
+2026-10-23 12:06:10.000 [xxl-job, admin JobScheduleHelper#scheduleThread] INFO  c.x.j.a.b.s.thread.JobScheduleHelper - >>>>>>>>> init xxl-job admin scheduler success.
+2026-10-23 12:06:39.098 [http-nio-8080-exec-2] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /toLogin
+2026-10-23 12:06:39.121 [http-nio-8080-exec-2] WARN  o.s.web.servlet.PageNotFound - No endpoint GET /toLogin.
+2026-10-23 12:06:40.660 [http-nio-8080-exec-6] WARN  o.s.web.servlet.PageNotFound - No mapping for POST /login
+2026-10-23 12:06:40.661 [http-nio-8080-exec-6] WARN  o.s.web.servlet.PageNotFound - No endpoint POST /login.
+2026-10-23 12:07:07.363 [http-nio-8080-exec-3] INFO  o.a.tomcat.util.http.parser.Cookie - A cookie header was received [Set-Cookie: xxl_job_login_token=eyJ1c2VySWQiOiIxIiwiZXhwaXJlVGltZSI6MCwic2lnbmF0dXJlIjoiYzY2MDRjZmNhMDA5NDA5YWJjYjRiMTM3NmQ2YmMyMDcifQ;] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2026-10-23 13:23:38.805 [HikariCP:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariCP - Thread starvation or clock leap detected (housekeeper delta=1m1s943ms849µs100ns).

@@ -1,0 +1,51 @@
+
+
+              |\      _,,,--,,_
+             /,`.-'`'   ._  \-;;,_
+  _______ __|,4-  ) )_   .;.(__`'-'__     ___ __    _ ___ _______
+ |       | '---''(_/._)-'(_\_)   |   |   |   |  |  | |   |       |
+ |    _  |    ___|_     _|       |   |   |   |   |_| |   |       | __ _ _
+ |   |_| |   |___  |   | |       |   |   |   |       |   |       | \ \ \ \
+ |    ___|    ___| |   | |      _|   |___|   |  _    |   |      _|  \ \ \ \
+ |   |   |   |___  |   | |     |_|       |   | | |   |   |     |_    ) ) ) )
+ |___|   |_______| |___| |_______|_______|___|_|  |__|___|_______|  / / / /
+ ==================================================================/_/_/_/
+
+:: Built with Spring Boot :: 4.1.0
+
+
+2026-10-23T11:59:54.022+08:00  INFO 7656 --- [           main] o.s.s.petclinic.PetClinicApplication     : Starting PetClinicApplication v4.0.0-SNAPSHOT using Java 21.0.12.1 with PID 7656 (D:\code\workbuddy\workbuddy-project\java\spring-boot-api\spring-petclinic\target\spring-petclinic-4.0.0-SNAPSHOT.jar started by 1 in D:\code\workbuddy\workbuddy-project\java\spring-boot-api\spring-petclinic)
+2026-10-23T11:59:54.036+08:00  INFO 7656 --- [           main] o.s.s.petclinic.PetClinicApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-10-23T11:59:57.425+08:00  INFO 7656 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-23T11:59:57.574+08:00  INFO 7656 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 124 ms. Found 3 JPA repository interfaces.
+2026-10-23T12:00:00.242+08:00  INFO 7656 --- [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8081 (http)
+2026-10-23T12:00:00.368+08:00  INFO 7656 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-23T12:00:00.369+08:00  INFO 7656 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-10-23T12:00:00.814+08:00  INFO 7656 --- [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 6549 ms
+2026-10-23T12:00:01.652+08:00  INFO 7656 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-23T12:00:02.176+08:00  INFO 7656 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:6d71320f-2c73-4b3a-9788-dfa36c0fe70c user=SA
+2026-10-23T12:00:02.182+08:00  INFO 7656 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-10-23T12:00:02.686+08:00  INFO 7656 --- [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-23T12:00:03.069+08:00  INFO 7656 --- [           main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-10-23T12:00:04.907+08:00  INFO 7656 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-23T12:00:05.092+08:00  INFO 7656 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:6d71320f-2c73-4b3a-9788-dfa36c0fe70c]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: 6D71320F-2C73-4B3A-9788-DFA36C0FE70C/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-23T12:00:08.377+08:00  INFO 7656 --- [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-23T12:00:08.391+08:00  INFO 7656 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-23T12:00:08.927+08:00  INFO 7656 --- [           main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-23T12:00:15.375+08:00  INFO 7656 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 13 endpoints beneath base path '/actuator'
+2026-10-23T12:00:16.388+08:00  INFO 7656 --- [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8081 (http) with context path '/'
+2026-10-23T12:00:16.431+08:00  INFO 7656 --- [           main] o.s.s.petclinic.PetClinicApplication     : Started PetClinicApplication in 24.054 seconds (process running for 25.803)
+2026-10-23T12:00:26.001+08:00  INFO 7656 --- [nio-8081-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-23T12:00:26.001+08:00  INFO 7656 --- [nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-10-23T12:00:26.009+08:00  INFO 7656 --- [nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Java 方向 10 个项目运行清单 · 2026-10-23</title>
+<style>
+  :root { --ink:#1a2332; --sub:#5a6b82; --line:#e3e9f2; --green:#0e9f6e; --blue:#2563eb; --bg:#f6f8fb; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:"Microsoft YaHei","PingFang SC",sans-serif; background:var(--bg); color:var(--ink); padding:32px 16px; }
+  .wrap { max-width:1080px; margin:0 auto; }
+  h1 { font-size:26px; margin-bottom:6px; }
+  .meta { color:var(--sub); font-size:13px; margin-bottom:22px; }
+  .badges { display:flex; gap:10px; flex-wrap:wrap; margin-bottom:24px; }
+  .badge { background:#fff; border:1px solid var(--line); border-radius:10px; padding:10px 16px; font-size:13px; }
+  .badge b { font-size:20px; color:var(--green); margin-right:4px; }
+  table { width:100%; border-collapse:collapse; background:#fff; border-radius:12px; overflow:hidden; box-shadow:0 1px 3px rgba(16,32,64,.06); font-size:13.5px; }
+  th { background:#eef2f8; text-align:left; padding:10px 12px; font-size:12.5px; color:var(--sub); white-space:nowrap; }
+  td { padding:10px 12px; border-top:1px solid var(--line); vertical-align:top; }
+  .name { font-weight:700; white-space:nowrap; }
+  .dir { color:var(--sub); font-size:12px; }
+  .ok { color:var(--green); font-weight:700; white-space:nowrap; }
+  .port { font-family:Consolas,monospace; color:var(--blue); white-space:nowrap; }
+  .evi { color:#3c4a5f; }
+  code { background:#f0f3f8; border-radius:4px; padding:1px 5px; font-size:12px; font-family:Consolas,monospace; }
+  h2 { font-size:18px; margin:30px 0 12px; }
+  .shots { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+  figure { background:#fff; border:1px solid var(--line); border-radius:12px; overflow:hidden; }
+  figure img { width:100%; display:block; }
+  figcaption { padding:8px 12px; font-size:12.5px; color:var(--sub); border-top:1px solid var(--line); }
+  .links { background:#fff; border:1px solid var(--line); border-radius:12px; padding:16px 20px; font-size:13.5px; line-height:2; }
+  .foot { margin-top:26px; color:var(--sub); font-size:12px; text-align:center; }
+  @media (max-width:760px){ .shots{grid-template-columns:1fr;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Java 方向 10 个项目运行清单</h1>
+  <div class="meta">工作目录 D:\code\workbuddy\workbuddy-project\java · 2026-10-23 · 工具链：Maven 3.9.9（阿里云镜像）+ JDK21 / JDK17（Sa-Token 系）+ Redis 6379 + MySQL 8.0（3306，root/root）</div>
+
+  <div class="badges">
+    <div class="badge"><b>10 / 10</b> 项目跑通</div>
+    <div class="badge"><b>6</b> 个 Web 服务在线</div>
+    <div class="badge"><b>4</b> 个 CLI 演示可复跑</div>
+    <div class="badge"><b>2</b> 个中间件接通（Redis / MySQL）</div>
+  </div>
+
+  <table>
+    <tr><th>#</th><th>项目</th><th>子方向</th><th>运行方式</th><th>验证结果（实测证据）</th><th>状态</th></tr>
+    <tr>
+      <td>1</td><td class="name">spring-petclinic<div class="dir">spring-boot-api</div></td>
+      <td>Spring 宠物诊所</td><td><span class="port">jar → 8081</span></td>
+      <td class="evi">首页 HTTP 200，标题 <code>PetClinic :: a Spring Framework demonstration</code>，页面正常渲染</td><td class="ok">✔</td>
+    </tr>
+    <tr>
+      <td>2</td><td class="name">Sa-Token<div class="dir">enterprise-admin</div></td>
+      <td>登录鉴权 demo</td><td><span class="port">8082</span></td>
+      <td class="evi">登录 <code>zhang/123456</code> 得 token → <code>/at/checkPermission</code> 200；不带 token 访问同接口 401（鉴权生效）</td><td class="ok">✔</td>
+    </tr>
+    <tr>
+      <td>3</td><td class="name">Sa-Token SSO<div class="dir">enterprise-admin</div></td>
+      <td>单点登录 三模式</td><td><span class="port">9000 + 9003</span></td>
+      <td class="evi">server 认证中心 200；client <code>/sso/login</code> 302 → <code>sso/auth?client=sso-client3</code>，跨端跳转链路打通</td><td class="ok">✔</td>
+    </tr>
+    <tr>
+      <td>4</td><td class="name">java-design-patterns<div class="dir">java-tooling</div></td>
+      <td>243 种设计模式</td><td><code>CLI</code></td>
+      <td class="evi">strategy / builder 两种模式实跑，日志输出正确（含 <code>MSYS2_ARG_CONV_EXCL</code> classpath 修复）</td><td class="ok">✔</td>
+    </tr>
+    <tr>
+      <td>5</td><td class="name">hutool<div class="dir">java-tooling</div></td>
+      <td>工具集 5.8.32</td><td><code>CLI jar</code></td>
+      <td class="evi">StrUtil / JSONUtil / DateUtil / SecureUtil(md5) 全部输出正确</td><td class="ok">✔</td>
+    </tr>
+    <tr>
+      <td>6</td><td class="name">picocli<div class="dir">java-tooling</div></td>
+      <td>命令行框架</td><td><code>CLI</code></td>
+      <td class="evi"><code>Greet -u=WorkBuddy</code> → <code>Hello, WorkBuddy</code>；<code>--help</code> 自动生成用法</td><td class="ok">✔</td>
+    </tr>
+    <tr>
+      <td>7</td><td class="name">netty<div class="dir">integration-etl</div></td>
+      <td>4.2.6 echo 服务</td><td><span class="port">8007</span></td>
+      <td class="evi">EchoServer/EchoClient 连接成功，服务端日志确认 <code>READ</code> 收发（源码为 4.2 SNAPSHOT，改用官方 4.2.6.Final 依赖）</td><td class="ok">✔</td>
+    </tr>
+    <tr>
+      <td>8</td><td class="name">easyexcel<div class="dir">data-middleware</div></td>
+      <td>Excel 读写</td><td><code>CLI</code></td>
+      <td class="evi">2 万行写入 3112ms、读回 1108ms，平均分 79.5，生成 354KB xlsx</td><td class="ok">✔</td>
+    </tr>
+    <tr>
+      <td>9</td><td class="name">redisson<div class="dir">data-middleware</div></td>
+      <td>分布式对象 3.35.0</td><td><span class="port">Redis 6379</span></td>
+      <td class="evi">RBucket 带 TTL / RMap / RAtomicLong 计 1000 准确；<b>5 线程抢 RLock，临界区最大并发 = 1</b>（互斥实锤）</td><td class="ok">✔</td>
+    </tr>
+    <tr>
+      <td>10</td><td class="name">xxl-job<div class="dir">data-middleware</div></td>
+      <td>分布式调度 3.5.1</td><td><span class="port">8080</span></td>
+      <td class="evi">MySQL 建库导入 8 张表 → admin 启动 <code>xxl-job admin start success</code> → <code>admin/123456</code> 登录 200 → 任务管理/执行器/日志三页全 200</td><td class="ok">✔</td>
+    </tr>
+  </table>
+
+  <div style="height:14px"></div>
+
+  <table>
+    <tr><th>附赠</th><th>项目</th><th>结果</th><th>状态</th></tr>
+    <tr>
+      <td>＋</td><td class="name">spring-batch<div class="dir">integration-etl</div></td>
+      <td class="evi">自写批处理 demo：CSV 503 行（含 2 条坏行）→ 加工 → 写出；<b>read=502 / write=500 / skip=2 / rollback=2 / 187ms</b>，chunk=100 + skip 容错全生效，状态 COMPLETED</td><td class="ok">✔</td>
+    </tr>
+  </table>
+
+  <h2>在线服务入口（当前可直接打开）</h2>
+  <div class="links">
+    🐾 <a href="http://127.0.0.1:8081/">http://127.0.0.1:8081</a> — spring-petclinic 宠物诊所<br>
+    🔑 <a href="http://127.0.0.1:8082/">http://127.0.0.1:8082</a> — Sa-Token 登录 demo（账号 zhang / 123456）<br>
+    🏰 <a href="http://127.0.0.1:9000/sso/auth">http://127.0.0.1:9000/sso/auth</a> — SSO 统一认证中心<br>
+    🏘️ <a href="http://127.0.0.1:9003/">http://127.0.0.1:9003</a> — SSO client 应用三（模式三跨域）<br>
+    ⏰ <a href="http://127.0.0.1:8080/auth/login">http://127.0.0.1:8080</a> — XXL-JOB 调度中心（admin / 123456）
+  </div>
+
+  <h2>实拍截图（1280×800 @2x）</h2>
+  <div class="shots">
+    <figure><img src="_shots/01-petclinic.png" alt="petclinic"><figcaption>① spring-petclinic 首页</figcaption></figure>
+    <figure><img src="_shots/02-satoken-demo.png" alt="satoken"><figcaption>② Sa-Token 登录 demo 首页</figcaption></figure>
+    <figure><img src="_shots/05-sso-server-auth.png" alt="sso"><figcaption>③ SSO 统一认证中心登录页</figcaption></figure>
+    <figure><img src="_shots/03-xxl-job-login.png" alt="xxl-login"><figcaption>⑩ XXL-JOB 登录页</figcaption></figure>
+    <figure><img src="_shots/04-xxl-job-dashboard.png" alt="xxl-dash"><figcaption>⑩ XXL-JOB 任务管理（已登录，含示例任务01）</figcaption></figure>
+  </div>
+
+  <div class="foot">生成于 2026-10-23 · 所有服务通过常驻脚本 <code>_start-web.sh</code> / <code>_start-xxl.sh</code> 拉起，日志在同目录 <code>_log-*.txt</code></div>
+</div>
+</body>
+</html>
